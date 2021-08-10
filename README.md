@@ -6,6 +6,7 @@
 ## Environment
 - JAVA 11
 - Spring Boot 2.5.3
+- Gradle 7.1.1
 - H2 Database
 - JPA
 - JUnit5
