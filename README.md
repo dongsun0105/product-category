@@ -17,5 +17,5 @@ gradle build
 
 ## Execution
 ```
-java -jar build/libs/product-category-0.0.1-SNAPSHOT.jar
+java -jar build/libs/product-category-1.0.0.jar
 ```
