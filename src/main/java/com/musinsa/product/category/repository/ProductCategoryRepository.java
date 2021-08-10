@@ -8,7 +8,7 @@ import java.util.List;
 public interface ProductCategoryRepository extends JpaRepository<ProductCategory, Long> {
     List<ProductCategory> findAllByDeletedYnIsFalseAndParentCategoryIdIsNullOrderByOrd();
     List<ProductCategory> findAllByDeletedYnIsFalseAndParentCategoryIdIsNotNullOrderByOrd();
-    ProductCategory findByCategoryIdAndParentCategoryIdIsNullAndDeletedYnIsFalse(Long categoryId);
     List<ProductCategory> findAllByParentCategoryIdAndDeletedYnIsFalseOrderByOrd(Long parentCategoryId);
+    ProductCategory findByCategoryIdAndParentCategoryIdIsNullAndDeletedYnIsFalse(Long categoryId);
     ProductCategory findByCategoryIdAndDeletedYnIsFalse(Long categoryId);
 }
