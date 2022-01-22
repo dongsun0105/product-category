@@ -86,6 +86,7 @@ public class ProductCategoryService {
             throw new ProductCategoryException(ExceptionCode.ERR001);
         }
 
-        productCategoryRepository.delete(productCategory);
+        productCategory.updateDeletedYn(true);
+        productCategoryRepository.save(productCategory);
     }
 }
